@@ -148,6 +148,10 @@ app.get("/sousTacheByTache/:id", (req, res) => {
    SousTacheController.getSousTacheByTache(req, res, con);
 });
 
+app.post("/sousTache", (req, res) => {
+   SousTacheController.setSousTache(req, res, con);
+});
+
 //**************************************************/
 
 app.listen(process.env.PORT || 4000, () => {

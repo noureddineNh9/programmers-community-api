@@ -31,10 +31,10 @@ const login = (req, res, con) => {
                   }
                );
             } else {
-               return res.status(400).json("password incorrect");
+               return res.status(400).json("authentication failed !");
             }
          } else {
-            return res.status(400).json("email not exist");
+            return res.status(400).json("authentication failed ! ");
          }
       } else {
          return res.status(400).json("something wrong !");
